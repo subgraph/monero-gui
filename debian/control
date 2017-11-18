@@ -1,0 +1,17 @@
+Source: monero-gui
+Section: devel
+Priority: extra
+Maintainer: David Mirza Ahmad <dma@subgraph.com>
+Build-Depends: debhelper (>= 9),
+               dh-systemd
+Standards-Version: 3.9.8
+Homepage: https://github.com/monero-project/monero-gui
+Vcs-Git: https://github.com/monero-project/monero-gui.git
+
+Package: monero-gui
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends}, ${misc:Depends}, monero (>= 0.11.0.0)
+Description: Monero GUI wallet
+ Monero GUI is a QT5 desktop wallet for the Monero crypto-currency p2p node client.
+

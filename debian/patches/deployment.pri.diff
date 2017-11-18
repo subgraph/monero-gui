@@ -1,0 +1,13 @@
+Index: monero-gui/deployment.pri
+===================================================================
+--- monero-gui.orig/deployment.pri	2017-11-11 22:58:14.003763033 +0000
++++ monero-gui/deployment.pri	2017-11-13 02:38:02.603968981 +0000
+@@ -17,7 +17,7 @@
+         qnx {
+             target.path = /tmp/$${TARGET}/bin
+         } else {
+-            target.path = /opt/$${TARGET}/bin
++            target.path = /usr/bin
+         }
+         export(target.path)
+     }
