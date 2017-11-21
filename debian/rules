@@ -7,6 +7,12 @@ override_dh_auto_configure:
 	cd $(CURDIR) && echo "var GUI_VERSION = \"v0.11.1.0\"\nvar GUI_MONERO_VERSION = \"v0.11.0.0\"" >version.js
 	qmake
 	make -C src/zxcvbn-c
-	
+
+override_dh_auto_clean:
+	echo "dh_auto_clean"
+
 override_dh_auto_install:
 	dh_auto_install -- prefix=/usr
+	mkdir -p $(CURDIR)/debian/monero-gui/usr/bin
+	mv $(CURDIR)/debian/monero-gui/opt/monero-wallet-gui/bin/monero-wallet-gui $(CURDIR)/debian/monero-gui/usr/bin/
+	rm -rf $(CURDIR)/debian/monero-gui/opt/
