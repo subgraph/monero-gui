@@ -1,3 +1,9 @@
+monero-gui (0.11.1.0-2) UNRELEASED; urgency=low
+
+    * Updated packaging to include desktop file and icons.
+
+ -- David Mirza Ahmad <dma@subgraph.com>  Sat, 27 Jan 2018 20:10:00 +0000
+
 monero-gui (0.11.1.0-1) UNRELEASED; urgency=low
 
     * Initial Release
