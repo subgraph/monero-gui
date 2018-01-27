@@ -1,0 +1,16 @@
+Adds a desktop file
+--- /dev/null
++++ b/monero.desktop
+@@ -0,0 +1,12 @@
++[Desktop Entry]
++Name=Monero
++Name[hu]=Monero
++GenericName=Monero
++GenericName[hu]=Monero
++Comment=Launch Monero GUI Wallet
++Exec=monero-wallet-gui
++Terminal=false
++Type=Application
++Icon=monero
++Categories=Network;
++StartupWMClass=monero-core

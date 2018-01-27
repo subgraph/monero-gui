@@ -1,0 +1,12 @@
+#!/usr/bin/dh-exec
+
+images/appicons/16x16.png => /usr/share/icons/hicolor/16x16/monero.png
+images/appicons/24x24.png => /usr/share/icons/hicolor/24x24/monero.png
+images/appicons/32x32.png => /usr/share/icons/hicolor/32x32/monero.png
+images/appicons/48x48.png => /usr/share/icons/hicolor/48x48/monero.png
+images/appicons/64x64.png => /usr/share/icons/hicolor/64x64/monero.png
+images/appicons/96x96.png => /usr/share/icons/hicolor/96x96/monero.png
+images/appicons/128x128.png => /usr/share/icons/hicolor/128x128/monero.png
+images/appicons/256x256.png => /usr/share/icons/hicolor/256x256/monero.png
+
+monero.desktop /usr/share/applications
